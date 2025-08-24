@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+*{
+    background-color: rgb(28, 25, 57);
+}
+.main{
+  margin: 0px 55px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, list right */
+  align-items: center;
+  padding: 0px 20px;
+}
+.logo {
+     font-size: 25px;       /* Size bada kiya gaya */
+     font-weight: bold;     /* Bold text */
+     color: whitesmoke;        /* Text color */
+     font-family: cursive; /* Custom font */
+}
+.list{
+    width: 0px;
+    float: left;
+    height: 70px;
+    position: relative;
+    right: 500px;
+    bottom: 20px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+}
+.main_text{
+    display: flex;
+    align-items: center;
+}
+.text{
+    font-size: 70px;
+    line-height: 2.1;
+    margin-left: 20px;
+    color: white;
+}
+.text1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  font-size: 35px;
+  color:rgb(159, 142, 142);
+}
+.wave-emoji {
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-name: wave;
+    display: inline-block;
+    transform-origin: 70% 70%;
+}
+.wave-emoji img {
+    width: 45px;         /* 👈 Smaller size */
+    height: 45px;
+    position: relative;
+    top: 2px;             /* 👈 Thoda neeche lana ke liye */
+}
+@keyframes wave { /* its for wave animation */ 
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.paragraph{
+    line-height: 1.4;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    margin-top: -55px;
+}
+.skill{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-bottom: 20px;
+        p {
+          background: purple;
+          color: #fff;
+          padding: 6px 9px;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          margin-block-start: 1em;
+          margin-block-end: 1em; 
+        }
+      }
+.skill1{
+  margin-top: -50px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-bottom: 20px;
+        p {
+          background: purple;
+          color: #fff;
+          padding: 6px 9px;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          margin-block-start: 1em;
+          margin-block-end: 1em; 
+        }
+      }      
+.badge {
+    display: inline-block;
+    inline-size: auto;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.social-media{
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.icon-button.linkedin { /* social media ka css start yaha sai hai  */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0077B5; /* LinkedIn brand color */
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+.icon-button.linkedin i {
+  font-size: 20px;
+  background-color: transparent;
+}
+.icon-button.linkedin:hover {
+  background-color: black;
+}
+
+.icon-button.github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #323232; /* A common GitHub color */
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+.icon-button.github i {
+  font-size: 20px;
+  background-color: transparent;
+}
+.icon-button.github:hover {
+  background-color: black;
+}
+
+.icon-button.instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ec5c0eb1; /* A common GitHub color */
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+.icon-button.instagram i {
+  font-size: 20px;
+  background-color: transparent;
+}
+.icon-button.instagram:hover {
+  background-color: black;
+}
+
+.main-image{
+    margin: -610px 0px 0px 750px;
+}
+
+.btn-Resume {
+    margin-left: 20px;
+    margin-top: 20px;
+    background: #ff3d37;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    border: 2px solid #7a5cff; /* ✅ Yeh sahi syntax hai */
+    text-decoration: none;      /* ✅  yeh <a> tag hai toh */
+    display: inline-block;      /* ✅ Button jaisa behave karne ke liye */
+    line-height: 35px;          /* ✅ Text center karne ke liye */
+    text-align: center;
+}
+.btn-Resume span i {
+  background-color:  transparent;
+}
+.about-me{
+  margin: 0px 0px;
+}
+.about-me-text{
+    font-size: 23px;
+    line-height: 2.1;
+    margin-left: 985px;
+    margin-top: -510px;
+    color: skyblue;
+}
+.about-me-text1{
+  margin-left: -160px;
+  margin-top: -40px;
+  color: white;
+}
+
+
+
+
+    .Marksheet {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-left: 75px;
+    }
+
+    .card {
+      margin-left: 150px;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: white;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .img1 { width: 200px; height: 250px; }
+    .img2 { width: 200px; height: 250px; }
+    .img3 { width: 200px; height: 250px; }
+
+    .btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      background: #007bff;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: black;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="everything">
+    <div class="navbar">
+        <div class="logo">
+            <span></span>
+            <span>Trived Bhardwaj</span>
+            <span>></span>
+        </div>
+
+        <div class="list">
+            <ul>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Certificate</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_text">
+            <div>
+                <h1 class="text">
+                    Hi all, I'm Trived
+                <span class="wave-emoji"><img alt="👋" src="C:\Users\ritik\OneDrive\Desktop\Portfolio\Images\Hi.png" ></span>
+                </h1>
+                <P class="paragraph"> A passionate Data Analyst 😎 and also<br> having an experience of building WebSite with <br> HTML / CSS / JavaScript and some other cool libraries<br> and frameworks. </P>
+                <h3 class="text1">Skills:-</h3>
+            </div>
+        </div>
+        <div class="skill">
+            <p class="badge ">SQL</p>
+            <p class="badge ">Power-BI</p>
+            <p class="badge ">Python</p>
+            <p class="badge ">CSS</p>
+            <p class="badge ">HTML:5</p>
+        </div>
+        <div class="skill1">
+            <p class="badge ">Blank</p>
+            <p class="badge ">Blank</p>
+            <p class="badge ">Blank</p>
+            <p class="badge ">Blank</p>
+        </div>
+        <div class="social-media"> <!-- soical media icon yaha sai hai -->
+            <a class="icon-button linkedin" href="https://www.linkedin.com/in/trived-bhardwaj-a420b3327/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+                <span></span>
+              </a>
+              <a class="icon-button github" href="YOUR_GITHUB_PROFILE_URL" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+                <span></span>
+              </a>
+              <a class="icon-button instagram" href="https://www.instagram.com/_reckless_trived_mini/?__pwa=1" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+                <span></span>
+              </a>
+        </div>
+        <div class="main-image"><img src="C:\Users\ritik\OneDrive\Desktop\Portfolio\Images\LOGO.png" alt="main_image"
+          style="width:600px; height:auto;"> <!-- image ka size mene yaha incress kiya hai -->
+        </div>
+        <div>
+          <a class="btn-Resume" href="https://drive.google.com/file/d/1IIujH91G7BxzyhcgNggK5cLIZxuoqFS-/view?usp=drivesdk" rel="noopener noreferrer" target="_blank">RESUME <span><i class="fas fa-cloud-download-alt"></i></span></a>
+        </div>
+  </div>
+  <div class="about-me">
+    <div class="about-me-image"><img src="C:\Users\ritik\OneDrive\Desktop\Portfolio\Images\About me.png" alt="main_image"
+      style="width:600px; height:auto;"> <!-- image ka size mene yaha incress kiya hai -->
+      <div class="about-me-text">
+      <h1>About Me</h1>
+      <div class="about-me-text1">
+      <h3> >> I completed my High School from ICSE Board<br>and my high school Stream is Science.</h3>
+      <h3> >> After that i completed my Diploma in Computer Science Engineering from BTEUP with 1st Division.</h3>
+      <h3> >> After that i completed my B.TECH in Computer Science Engineering from AKTU with 1st Division.</h3>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Marksheet">
+    <div class="card">
+      <img src="C:\Users\ritik\OneDrive\Desktop\Portfolio\Images\1.jpeg" alt="Image 1" class="img1">
+      <a href="https://drive.google.com/file/d/1LPECxX2en8dSob7623Gd5ZYqPo8EVN_f/view?usp=drive_link" class="btn">View / Download</a>
+    </div>
+    <div class="card">
+      <img src="C:\Users\ritik\OneDrive\Desktop\Portfolio\Images\2.jpeg" alt="Image 2" class="img2">
+      <a href="https://drive.google.com/file/d/1LFRWaOwpiEarzsqmkRamVYk32vC--yOt/view?usp=drive_link" class="btn">View / Download</a>
+    </div>
+    <div class="card">
+      <img src="C:\Users\ritik\OneDrive\Desktop\Portfolio\Images\3.jpeg" alt="Image 3" class="img3">
+      <a href="https://drive.google.com/file/d/1jOvZCrL8X-v3wtJQ0LmOFzFs28LVw9CU/view?usp=drive_link" class="btn">View / Download</a>
+    </div>
+  </div>
+
+
+
+</div>
+</body>
+</html>
